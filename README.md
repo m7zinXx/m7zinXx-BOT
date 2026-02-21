@@ -79,10 +79,36 @@ export default {
   }
 };
 
-👨‍💻 Desenvolvedor
-Nome: Miguel (m7zinXx)
-Instagram: @miglz77x
+---
+
+## 👨‍💻 Desenvolvedor Especialista
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <a href="https://instagram.com/miglz77x">
+        <img src="https://i.imgur.com/uRovvWp.png" width="120px;" alt="Miguel Profile"/><br />
+        <sub><b>m7zinXx (Miguel)</b></sub>
+      </a>
+    </td>
+    <td align="left">
+      <b>🚀 Status:</b> Desenvolvedor Ativo<br>
+      <b>🌐 Redes:</b> <a href="https://instagram.com/miglz77x">Instagram</a><br>
+      <b>💻 Stack:</b> Node.js, JavaScript, Baileys API<br>
+      <b>🛡️ Bot Oficial:</b> m7zinXx-bot v1.0
+    </td>
+  </tr>
+</table>
+
 <p align="center">
-<b>© 2026 m7zinXx Bot - Todos os direitos reservados.</b>
+  <a href="https://instagram.com/miglz77x">
+    <img src="https://img.shields.io/badge/FOLLOW-INSTAGRAM-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram Follow">
+  </a>
 </p>
 
+---
+
+<p align="center">
+  <b>© 2026 m7zinXx Bot - Todos os direitos reservados.</b><br>
+  <i>"Se Deus é por nois, quem será contra nós?"</i>
+</p>
