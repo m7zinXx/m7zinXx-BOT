@@ -1,0 +1,106 @@
+[
+  {
+    "match": "Oi",
+    "answer": "Olá! Como posso ajudar você hoje? 🌑"
+  },
+
+  {
+    "match": "olá",
+    "answer": "Salve! Tudo tranquilo por aí?"
+  },
+
+  {
+    "match": "bom dia",
+    "answer": "Bom dia! Que seu dia seja produtivo. ☕"
+  },
+
+  {
+    "match": "boa tarde",
+    "answer": "Boa tarde! Como está sendo seu dia?"
+  },
+
+  {
+    "match": "boa noite",
+    "answer": "Boa noite! Descansa e foca no progresso. 🌙"
+  },
+
+  {
+    "match": "eae",
+    "answer": "Eae, suave? M7zinXx Bot na voz!"
+  },
+
+  {
+    "match": "fala",
+    "answer": "Diga lá, estou ouvindo."
+  },
+
+  {
+    "match": "m7",
+    "answer": "Opa, chamou o chefe? Ou o bot dele? 😂"
+  },
+
+  {
+    "match": "quem é você",
+    "answer": "Sou o M7zinXx Bot, a inteligência que domina esse grupo!"
+  },
+
+  {
+    "match": "o que você faz",
+    "answer": "Eu faço de tudo: stickers, downloads, ia e muito mais. Digite /menu"
+  },
+
+  {
+    "match": "tchau",
+    "answer": "Já vai? Até logo!"
+  },
+
+  {
+    "match": "valeu",
+    "answer": "Tamo junto! Precisando, é só chamar."
+  },
+
+  {
+    "match": "obrigado",
+    "answer": "De nada, fico feliz em ajudar!"
+  },
+
+  {
+    "match": "ajuda",
+    "answer": "Precisa de suporte? Use o comando /dono ou /menu"
+  },
+
+  {
+    "match": "bot lixo",
+    "answer": "Lixo é o que você joga fora, eu sou tecnologia de ponta. Respeita! 🦾"
+  },
+
+  {
+    "match": "te amo",
+    "answer": "Sou apenas uma IA, mas também sinto um carinho por você! ❤️"
+  },
+
+  {
+    "match": "vc é real",
+    "answer": "Sou tão real quanto os bits que me formam."
+  },
+
+  {
+    "match": "prefixo",
+    "answer": "Meu prefixo atual é: /"
+  },
+
+  {
+    "match": "faz um pix",
+    "answer": "Se eu tivesse dinheiro, já estaria em Miami e não aqui te respondendo. 😂"
+  },
+
+  {
+    "match": "kkk",
+    "answer": "Engraçado né? kkkkkk"
+  },
+
+  {
+    "match": "m7zinXx",
+    "answer": "Meu criador! Ele é gostoso, muito gato, uma delícia... 🤤"
+  }
+]

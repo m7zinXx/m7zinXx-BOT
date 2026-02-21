@@ -1,0 +1,4 @@
+assets/auth/baileys
+.vscodenode_modules
+session
+.env

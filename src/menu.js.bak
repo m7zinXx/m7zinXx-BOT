@@ -1,0 +1,73 @@
+import pkg from "../package.json" with { type: "json" };
+import { BOT_NAME } from "./config.js";
+import { getPrefix } from "./utils/database.js";
+import { readMore } from "./utils/index.js";
+
+export function menuMessage(groupJid, type = 'principal') {
+  const date = new Date();
+  const prefix = getPrefix(groupJid);
+  const uptime = process.uptime();
+
+  const formatUptime = (seconds) => {
+    const h = Math.floor(seconds / 3600);
+    const m = Math.floor((seconds % 3600) / 60);
+    return `${h}h ${m}m`;
+  };
+
+  // --- MENU ADMINISTRATIVO ---
+  if (type === 'adm') {
+    return `
+  ╭━━━━━━━━━━━━━━━╮
+      𝐌𝟕𝐳𝐢𝐧𝐗𝐱 𝐀𝐃𝐌𝐈𝐍
+  ╰━━━━━━━━━━━━━━━╯
+  ◈ 𝚂𝚝𝚊𝚝𝚞𝚜: Painel Admin
+  ◈ 𝙿𝚛𝚎𝚏𝚒𝚡𝚘: [ ${prefix} ]
+
+  ╭─〔 👮 𝐀𝐃𝐌𝐈𝐍𝐒 〕─⊷
+  ┝ ⌬ ${prefix}abrir | ${prefix}fechar
+  ┝ ⌬ ${prefix}ban | ${prefix}hidetag
+  ┝ ⌬ ${prefix}mute | ${prefix}unmute
+  ┝ ⌬ ${prefix}promover | ${prefix}rebaixar
+  ┝ ⌬ ${prefix}welcome | ${prefix}anti-link
+  ┝ ⌬ ${prefix}anti-audio | ${prefix}limpar
+  ╰──────────────╼
+  
+  『 ⚡ 𝐌𝟕𝐳𝐢𝐧𝐗𝐱 𝐒𝐲𝐬𝐭𝐞𝐦 』`.trim();
+  }
+
+  // --- MENU DOWNLOADS ---
+  if (type === 'downloads') {
+    return `
+  ╭━━━━━━━━━━━━━━━╮
+     𝐌𝟕𝐳𝐢𝐧𝐗𝐱 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃
+  ╰━━━━━━━━━━━━━━━╯
+  
+  ╭─〔 📥 𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐒 〕─⊷
+  ┝ ⌬ ${prefix}instagram
+  ┝ ⌬ ${prefix}tik-tok
+  ┝ ⌬ ${prefix}play-audio
+  ┝ ⌬ ${prefix}play-video
+  ┝ ⌬ ${prefix}yt-mp3 | ${prefix}yt-mp4
+  ╰──────────────╼`.trim();
+  }
+
+  // --- MENU PRINCIPAL (Geral) ---
+  return `
+  ╭━━━━━━━━━━━━━━━━━━━━╮
+       𝐌𝟕𝐳𝐢𝐧𝐗𝐱 𝐁𝐎𝐓 
+  ╰━━━━━━━━━━━━━━━━━━━━╯
+  ◈ 𝚄𝚙𝚝𝚒𝚖𝚎: ${formatUptime(uptime)}
+  ◈ 𝙳𝚊𝚝𝚊: ${date.toLocaleDateString("pt-br")}
+  ◈ 𝙿𝚛𝚎𝚏𝚒𝚡: [ ${prefix} ]
+
+  ┌─〔 📂 𝐂𝐀𝐓𝐄𝐆𝐎𝐑𝐈𝐀𝐒 〕─┐
+  ┆
+  ┆ ⌬ ${prefix}menuadm (Admins)
+  ┆ ⌬ ${prefix}menudown (Downloads)
+  ┆ ⌬ ${prefix}menuia (I.A)
+  ┆ ⌬ ${prefix}menudiversao (Lazer)
+  ┆
+  └──────────────╼ 🌑
+
+  『 ⚡ 𝐌𝟕𝐳𝐢𝐧𝐗𝐱 𝐒𝐲𝐬𝐭𝐞𝐦 』`.trim();
+}
